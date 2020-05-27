@@ -38,7 +38,10 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### Posts
 
-{% for post in site.posts %}   
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://mille-feuille.net{{ post.url }}#disqus_thread"></a></small></p>            
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="/github-pages-with-jekyll{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
