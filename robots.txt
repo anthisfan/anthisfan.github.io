@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mille-feuille.net/sitemap.xml
