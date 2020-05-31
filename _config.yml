@@ -2,3 +2,5 @@ theme: jekyll-theme-midnight
 title: petit à petit
 owner:
  name: mille-feuille
+plugins:
+  - jekyll-sitemap
