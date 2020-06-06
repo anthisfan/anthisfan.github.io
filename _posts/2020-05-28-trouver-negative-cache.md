@@ -7,12 +7,12 @@
 同僚からの報告をきっかけに、私の触っている業務用システムで、 slab cache が積載メモリの大半を占有する状況が発生していることに気付きました  
 実際に確認してみると、ユーザ空間から要求された合計メモリサイズが僅かであるにもかかわらず、メモリ使用量はほぼ 100% の値を指しています  
 より詳しく調べる前は、ページキャッシュで占有されているのだろう、と考えましたがそういった状況でもなさそうです  
-
+  
 Bonjour, je suis ingéneur système.  
 D'habitude, je construis et tourne des systèmes pour la jeu vidéo.  
 Un jour, j'ai reçu un rapport d'un collègue et j'ai remarqué que le `slab cache` occupe trop de mémoire de mon systèmes.  
-Lorsque je le vérifie, la consommation de mémoire de l'espace de utilisateur est petite, mais, la consommation de mémoire totale de système indique presque pour cent.
-Je croyais que c'est `page cache` avant de vérifier, mais c'étais faux.
+Lorsque je le vérifie, la consommation de mémoire de l'espace de utilisateur est petite, mais, la consommation de mémoire totale de système indique presque pour cent.  
+Je croyais que c'est `page cache` avant de vérifier, mais c'étais faux.  
 
 ### C'est quoi slab cache ?
 Linux kernel には、slab cache と呼ばれる kernel 内部キャッシュが存在します  
