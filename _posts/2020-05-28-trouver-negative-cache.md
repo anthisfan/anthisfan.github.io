@@ -17,7 +17,10 @@ Je croyais que c'est `page cache` avant de vérifier, mais c'étais faux.
 ### C'est quoi slab cache ?
 Linux kernel には、slab cache と呼ばれる kernel 内部キャッシュが存在します  
 この slab cache が、肥大化したものの、何が原因となっているのかすぐにはわからないことが多いと思います
-この記事では、その肥大化の原因を具体的に調査する方法について共有します
+この記事では、その肥大化の原因を具体的に調査する方法について共有します  
+Il y a `slab cache` dans le linux kernel pour la cache interne.  
+Mais, cette cache a très grossi donc je l'ai enquêté.  
+Au cette article, je vous communique la cause profonde.
 
 ### Pourquoi tu l'observes ?
 slab cache は、linux kernel 内部で確保されるメモリ領域で、自動的に解放される実装となっているようです  
